@@ -20,7 +20,7 @@ const BottomBar: React.FC<BottomBarProps> = ({ onRegister }) => {
       <a 
         href="#ingressos" 
         onClick={handleAction}
-        className="flex items-center justify-between px-4 py-3 md:py-4 md:px-8 max-w-6xl mx-auto hover:bg-gray-50 transition-colors cursor-pointer group"
+        className="flex items-center justify-between px-4 py-3 md:py-4 md:px-8 max-w-7xl mx-auto hover:bg-gray-50 transition-colors cursor-pointer group"
       >
         {/* Lado Esquerdo: Data */}
         <div className="flex items-center gap-3">

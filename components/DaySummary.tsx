@@ -4,7 +4,7 @@ import { Star } from 'lucide-react';
 const DaySummary: React.FC = () => {
   return (
     <section className="py-20 md:py-32 bg-white relative">
-      <div className="w-full max-w-6xl mx-auto px-4">
+      <div className="w-full max-w-7xl mx-auto px-4">
         {/* Header - Adjusted size to fit 2 lines cleanly */}
         <div className="text-center mb-16 max-w-4xl mx-auto">
             <span className="text-brand-red font-bold tracking-widest uppercase text-sm mb-2 block">O que você vive na prática</span>

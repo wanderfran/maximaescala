@@ -42,7 +42,7 @@ const FAQ: React.FC<FAQProps> = ({ onRegister }) => {
 
   return (
     <section id="faq" className="py-20 md:py-32 bg-black border-t border-white/5 scroll-mt-28 md:scroll-mt-32">
-      <div className="w-full max-w-6xl mx-auto px-4">
+      <div className="w-full max-w-7xl mx-auto px-4">
         <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 md:mb-20">
             <p className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-4">

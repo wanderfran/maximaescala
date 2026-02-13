@@ -12,7 +12,7 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
         {/* Glow Effects */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-red/5 blur-[120px] pointer-events-none"></div>
 
-        <div className="w-full max-w-6xl mx-auto px-4 relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
             <div className="text-center mb-20">
                 <span className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-4 block">
                     Vagas Limitadas

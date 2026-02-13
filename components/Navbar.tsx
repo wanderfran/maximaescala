@@ -41,8 +41,8 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent pointer-events-none"></div>
       )}
       
-      {/* Changed container to w-full max-w-6xl mx-auto for tighter constraint on wide screens */}
-      <div className="relative w-full max-w-6xl mx-auto px-4 md:px-6 flex items-center justify-between">
+      {/* Changed container to w-full max-w-7xl mx-auto for tighter constraint on wide screens */}
+      <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo - Reduced size */}
         <div className="flex-shrink-0 w-28 md:w-32 transition-all duration-300">
           <a href="#">

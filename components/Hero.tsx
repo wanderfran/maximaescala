@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto px-6 md:px-6 flex flex-col items-center md:items-start w-full max-w-6xl pt-[var(--mobile-hero-spacing)] md:pt-0">
+      <div className="relative z-10 mx-auto px-6 md:px-6 flex flex-col items-center md:items-start w-full max-w-7xl pt-[var(--mobile-hero-spacing)] md:pt-0">
 
         {/* Date & Location Tags */}
         <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-6 md:mb-8 md:ml-0">
@@ -102,15 +102,15 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
           
           {/* Improved Scannability Description */}
           <div className="flex flex-col gap-3 md:gap-4 max-w-2xl md:mx-0 mx-auto px-2">
-            <p className="font-sans font-medium text-base md:text-lg text-gray-300 leading-relaxed">
+            <p className="font-sans font-medium text-lg md:text-xl text-gray-300 leading-relaxed">
               Imersão estratégica para <strong className="text-white">Empresários e Líderes</strong> que não aceitam estagnação.
             </p>
-            
-            <p className="font-sans text-gray-400 text-sm md:text-base leading-relaxed hidden md:block">
+
+            <p className="font-sans text-gray-400 text-base md:text-lg leading-relaxed hidden md:block">
               Integramos Vendas, Comportamento e Posicionamento para transformar o potencial do seu negócio em <strong className="text-white border-b border-brand-red/50 pb-0.5">dominância de mercado e lucro real.</strong>
             </p>
              {/* Mobile simplified version */}
-             <p className="font-sans text-gray-400 text-sm leading-relaxed md:hidden">
+             <p className="font-sans text-gray-400 text-base leading-relaxed md:hidden">
               Transforme potencial em <strong className="text-white">lucro real</strong> através de Vendas, Comportamento e Posicionamento.
             </p>
           </div>
