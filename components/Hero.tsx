@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
         <div 
             className="hidden md:block w-full h-full bg-no-repeat"
             style={{
-                backgroundImage: "url('/hero-bg.jpg')",
+                backgroundImage: "url('/hero-image.jpg')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center 20%', // Adjusted to keep faces at the top
             }}
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
         <div 
             className="md:hidden w-full h-full bg-no-repeat"
             style={{
-                backgroundImage: "url('/hero-bg.jpg')",
+                backgroundImage: "url('/hero-image.jpg')",
                 backgroundSize: `${IMAGE_SCALE_PERCENT_MOBILE}% auto`,
                 backgroundPosition: `center top`, 
             }}
