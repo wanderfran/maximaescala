@@ -13,8 +13,8 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
   const IMAGE_SCALE_PERCENT_MOBILE = 180; // Zoom in on mobile to focus faces
   
   // --- CONFIGURAÇÃO MANUAL DA FONTE (HEADLINE) ---
-  const HEADLINE_SIZE_DESKTOP = '40px'; // Further reduced to clear faces
-  const HEADLINE_SIZE_MOBILE = '28px';
+  const HEADLINE_SIZE_DESKTOP = '80px';
+  const HEADLINE_SIZE_MOBILE = '48px';
 
   // --- CONTROLE DE ESPAÇAMENTO MOBILE ---
   // Reduzido para 18vh pois o header agora ocupa espaço físico acima
@@ -83,20 +83,21 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
           <style>{`
             .hero-headline {
               font-size: ${HEADLINE_SIZE_MOBILE};
-              line-height: 1.1;
+              line-height: 1.05;
+              letter-spacing: 0.04em;
             }
             @media (min-width: 768px) {
               .hero-headline {
                 font-size: ${HEADLINE_SIZE_DESKTOP};
                 line-height: 1.0;
+                letter-spacing: 0.04em;
               }
             }
           `}</style>
-          <h1 className="hero-headline font-display text-white uppercase tracking-tight drop-shadow-2xl mb-4 md:mb-4 max-w-4xl">
-            Escale sua operação <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-[#FF2A00] via-[#FF4D00] to-[#FF2A00] bg-clip-text text-transparent filter drop-shadow-[0_0_15px_rgba(194,0,0,0.4)]">
-              com previsibilidade
-            </span>
+          <h1 className="hero-headline font-condensed text-white uppercase tracking-wide drop-shadow-2xl mb-4 md:mb-4 max-w-4xl">
+            Escale sua<br />
+            operação com<br />
+            previsibilidade
           </h1>
           
           {/* Improved Scannability Description */}
