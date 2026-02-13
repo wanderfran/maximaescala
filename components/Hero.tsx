@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
 
   return (
     <section 
-        className="relative min-h-[85vh] md:h-screen flex flex-col justify-end pb-12 md:pb-16 overflow-hidden bg-[#080808]"
+        className="relative min-h-[85vh] md:h-screen flex flex-col justify-center overflow-hidden bg-[#080808]"
         style={{ '--mobile-hero-spacing': MOBILE_CONTENT_SPACING } as React.CSSProperties}
     >
       
@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto px-6 flex flex-col items-center md:items-start w-full max-w-[1280px] mt-auto pt-[var(--mobile-hero-spacing)] md:pt-0">
+      <div className="relative z-10 mx-auto px-6 flex flex-col items-center md:items-start w-full max-w-6xl pt-[var(--mobile-hero-spacing)] md:pt-0">
 
         {/* Date & Location Tags */}
         <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-4 md:mb-4">
