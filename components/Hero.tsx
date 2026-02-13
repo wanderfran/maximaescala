@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
       <div className="relative z-10 mx-auto px-6 flex flex-col items-center md:items-start w-full max-w-6xl pt-[var(--mobile-hero-spacing)] md:pt-0">
 
         {/* Date & Location Tags */}
-        <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-4 md:mb-4">
+        <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-6 md:mb-8">
             <div className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#C20000] rounded-full"></span>
                 <span className="text-xs font-bold uppercase tracking-widest text-gray-200">20 e 21 de Março</span>
@@ -79,7 +79,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
         </div>
 
         {/* Headlines */}
-        <div className="text-center md:text-left w-full relative flex flex-col items-center md:items-start z-20 mb-4 md:mb-5">
+        <div className="text-center md:text-left w-full relative flex flex-col items-center md:items-start z-20 mb-6 md:mb-8">
           <style>{`
             .hero-headline {
               font-size: ${HEADLINE_SIZE_MOBILE};
@@ -94,14 +94,14 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
               }
             }
           `}</style>
-          <h1 className="hero-headline font-condensed text-white uppercase tracking-wide drop-shadow-2xl mb-4 md:mb-4 max-w-4xl">
+          <h1 className="hero-headline font-condensed text-white uppercase tracking-wide drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
             Escale sua<br />
             operação com<br />
             previsibilidade
           </h1>
           
           {/* Improved Scannability Description */}
-          <div className="flex flex-col gap-2 md:gap-3 max-w-2xl md:mx-0 mx-auto px-2">
+          <div className="flex flex-col gap-3 md:gap-4 max-w-2xl md:mx-0 mx-auto px-2">
             <p className="font-sans font-medium text-base md:text-lg text-gray-300 leading-relaxed">
               Imersão estratégica para <strong className="text-white">Empresários e Líderes</strong> que não aceitam estagnação.
             </p>
