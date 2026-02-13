@@ -1,7 +1,5 @@
 
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-
 import Hero from './components/Hero';
 import MarqueeSection from './components/MarqueeSection';
 import Features from './components/Features';
@@ -43,16 +41,8 @@ const App: React.FC = () => {
         initialTicketType={selectedTicketType}
       />
 
-      {/* Navbar: STICKY positioning. It will stick to the top (top-0). */}
-      <div className="sticky top-0 z-[50]">
-        <Navbar onRegister={() => handleOpenRegistration()} />
-      </div>
-
       <main className="space-y-0">
-        {/* Removed negative margin. Hero now flows naturally AFTER the Navbar. */}
-        <div>
-            <Hero onRegister={() => handleOpenRegistration()} />
-        </div>
+        <Hero onRegister={() => handleOpenRegistration()} />
         
         {/* Marquee Floating on the division */}
         <div className="relative w-full z-40 h-0">
