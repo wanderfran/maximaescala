@@ -8,7 +8,7 @@ const DaySummary: React.FC = () => {
         {/* Header - Adjusted size to fit 2 lines cleanly */}
         <div className="text-center mb-16 max-w-4xl mx-auto">
             <span className="text-brand-red font-bold tracking-widest uppercase text-sm mb-2 block">O que você vive na prática</span>
-           <h2 className="font-display text-3xl md:text-6xl font-normal text-black uppercase tracking-tight leading-tight">
+           <h2 className="font-condensed text-3xl md:text-6xl font-normal text-black uppercase tracking-tight leading-tight">
               A ROTINA DE <span className="text-brand-red">LÍDERES DE MERCADO</span>
            </h2>
         </div>
@@ -17,7 +17,7 @@ const DaySummary: React.FC = () => {
           {/* Day 01 Card */}
           <div className="flex flex-col rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] bg-white border border-gray-100 h-full">
              <div className="bg-[#C20000] p-8 text-center py-12">
-                <h3 className="font-display text-5xl md:text-6xl text-white mb-3 tracking-tight">DIA 01</h3>
+                <h3 className="font-condensed text-5xl md:text-6xl text-white mb-3 tracking-tight">DIA 01</h3>
                 <div className="w-16 h-1 bg-white/30 mx-auto mb-4 rounded-full"></div>
                 <p className="font-sans text-white text-lg md:text-xl font-bold max-w-sm mx-auto tracking-wide uppercase leading-snug">
                    Identidade, Comunicação e Networking
@@ -58,7 +58,7 @@ const DaySummary: React.FC = () => {
           <div className="flex flex-col rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] bg-white border border-gray-100 h-full">
              <div className="bg-[#C20000] p-8 text-center py-12 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
-                <h3 className="font-display text-5xl md:text-6xl text-white mb-3 relative z-10 tracking-tight">DIA 02</h3>
+                <h3 className="font-condensed text-5xl md:text-6xl text-white mb-3 relative z-10 tracking-tight">DIA 02</h3>
                 <div className="w-16 h-1 bg-white/30 mx-auto mb-4 rounded-full relative z-10"></div>
                 <p className="font-sans text-white text-lg md:text-xl font-bold max-w-sm mx-auto relative z-10 tracking-wide uppercase leading-snug">
                    Governança, Vendas e Plano de Ação

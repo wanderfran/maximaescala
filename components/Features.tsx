@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mic, FileText, TrendingUp, Map, Users } from 'lucide-react';
+import { Mic, FileText, TrendingUp, Map } from 'lucide-react';
 
 const Features: React.FC = () => {
   const features = [
@@ -28,12 +28,6 @@ const Features: React.FC = () => {
       highlight: "CANAIS REAIS",
       desc: "Identificação dos canais de aquisição que trazem clientes qualificados e geram ROI para o seu modelo de negócio.",
     },
-    {
-      icon: <Users size={32} />,
-      title: "AMBIENTE",
-      highlight: "ECOSSISTEMA",
-      desc: "Networking intencional com outros líderes que estão jogando o jogo da escala. Negócios acontecem aqui dentro.",
-    },
   ];
 
   return (
@@ -45,9 +39,9 @@ const Features: React.FC = () => {
           <div className="text-center mb-16 md:mb-20 max-w-4xl mx-auto pt-4 md:pt-12">
               <span className="text-brand-red font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Metodologia Integrada</span>
               
-              <h2 className="font-display uppercase leading-tight mb-8 w-full">
-                  <span className="block text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-black mb-1 md:mb-2 tracking-tight">Fundamentos de</span>
-                  <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-brand-red filter drop-shadow-sm tracking-tighter pb-2">Crescimento.</span>
+              <h2 className="font-condensed uppercase leading-tight mb-8 w-full">
+                  <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black mb-1 md:mb-2 tracking-tight">Fundamentos de</span>
+                  <span className="block text-3xl sm:text-5xl md:text-6xl text-brand-red filter drop-shadow-sm tracking-tighter pb-2">Crescimento.</span>
               </h2>
               
               <div className="w-24 h-1.5 bg-black/10 mx-auto rounded-full mb-8"></div>
@@ -71,17 +65,17 @@ const Features: React.FC = () => {
                     hover:shadow-[0_20px_40px_-10px_rgba(194,0,0,0.2)] 
                     transform transition-all duration-300 hover:-translate-y-2
                     group
-                    w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-2rem)]
+                    w-full md:w-[calc(50%-1.5rem)]
                 `}
               >
                 {/* Number Badge */}
                 {/* Mobile: Top Left Inside */}
-                <div className="absolute left-5 top-5 bg-[#C20000] text-white font-display text-sm w-8 h-8 flex items-center justify-center rounded-full shadow-md z-20 md:hidden">
+                <div className="absolute left-5 top-5 bg-[#C20000] text-white font-condensed text-sm w-8 h-8 flex items-center justify-center rounded-full shadow-md z-20 md:hidden">
                     {idx + 1}
                 </div>
                 
                 {/* Desktop: Hanging Left */}
-                <div className="hidden md:flex absolute left-0 top-12 -translate-x-1/2 bg-[#C20000] text-white font-display text-xl w-10 h-10 items-center justify-center rounded-full shadow-md z-20 border-4 border-[#F2F2F2]">
+                <div className="hidden md:flex absolute left-0 top-12 -translate-x-1/2 bg-[#C20000] text-white font-condensed text-xl w-10 h-10 items-center justify-center rounded-full shadow-md z-20 border-4 border-[#F2F2F2]">
                     {idx + 1}
                 </div>
 
@@ -98,7 +92,7 @@ const Features: React.FC = () => {
                   
                   {/* Highlight (Second Line) */}
                   {/* Removed whitespace-nowrap to prevent text cutoff and added break-words */}
-                  <h3 className="text-black font-display text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl uppercase leading-normal tracking-tight group-hover:text-[#C20000] transition-colors w-full pb-2 break-words">
+                  <h3 className="text-black font-condensed text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl uppercase leading-normal tracking-tight group-hover:text-[#C20000] transition-colors w-full pb-2 break-words">
                     {feature.highlight}
                   </h3>
                 </div>

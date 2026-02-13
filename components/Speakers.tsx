@@ -38,7 +38,7 @@ const Speakers: React.FC = () => {
                 <p className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-3">
                     Quem conduz o Máxima Escala
                 </p>
-                <h2 className="font-display text-4xl md:text-6xl text-white uppercase leading-[0.95] tracking-tight">
+                <h2 className="font-condensed text-4xl md:text-6xl text-white uppercase leading-[0.95] tracking-tight">
                     As Maiores <br className="hidden md:block"/>
                     <span className="text-brand-red">Autoridades</span>
                 </h2>
@@ -70,7 +70,7 @@ const Speakers: React.FC = () => {
                         ) : (
                             // Fallback
                              <div className="absolute inset-0 flex items-center justify-center bg-zinc-900">
-                                <span className="font-display text-6xl text-white/10">{speaker.name.charAt(0)}</span>
+                                <span className="font-condensed text-6xl text-white/10">{speaker.name.charAt(0)}</span>
                              </div>
                         )}
 
@@ -86,7 +86,7 @@ const Speakers: React.FC = () => {
                             </div>
 
                             {/* Name - Adjusted leading to prevent crop */}
-                            <h3 className="font-display text-2xl md:text-3xl text-white uppercase leading-none mb-2 drop-shadow-lg">
+                            <h3 className="font-condensed text-2xl md:text-3xl text-white uppercase leading-none mb-2 drop-shadow-lg">
                                 {speaker.name}
                             </h3>
                             

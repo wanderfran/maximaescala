@@ -48,7 +48,7 @@ const FAQ: React.FC<FAQProps> = ({ onRegister }) => {
             <p className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-4">
                 Dúvidas Rápidas
             </p>
-            <h2 className="font-display text-3xl sm:text-5xl md:text-7xl font-normal text-white uppercase tracking-tight leading-none">
+            <h2 className="font-condensed text-3xl sm:text-4xl md:text-6xl font-normal text-white uppercase tracking-tight leading-none">
                 Perguntas <br className="md:hidden" /> <span className="text-brand-red">Frequentes</span>
             </h2>
             </div>
@@ -63,7 +63,7 @@ const FAQ: React.FC<FAQProps> = ({ onRegister }) => {
                     onClick={() => toggleFAQ(index)}
                     className="w-full flex items-center justify-between p-6 md:p-8 text-left group"
                 >
-                    <span className={`font-display text-lg md:text-xl uppercase tracking-wide transition-colors leading-tight ${openIndex === index ? 'text-white' : 'text-gray-400 group-hover:text-white'}`}>
+                    <span className={`font-condensed text-lg md:text-xl uppercase tracking-wide transition-colors leading-tight ${openIndex === index ? 'text-white' : 'text-gray-400 group-hover:text-white'}`}>
                     {item.question}
                     </span>
                     <span className="flex-shrink-0 ml-6">
@@ -97,7 +97,7 @@ const FAQ: React.FC<FAQProps> = ({ onRegister }) => {
             <div className="mt-20 text-center">
                 <button 
                 onClick={onRegister}
-                className="inline-block bg-[#C20000] hover:bg-[#a50000] text-white text-lg md:text-2xl font-normal py-5 px-16 rounded-lg shadow-[0_0_30px_rgba(194,0,0,0.4)] transition-all duration-200 uppercase tracking-wide font-display transform hover:scale-105"
+                className="inline-block bg-[#C20000] hover:bg-[#a50000] text-white text-lg md:text-2xl font-normal py-5 px-16 rounded-lg shadow-[0_0_30px_rgba(194,0,0,0.4)] transition-all duration-200 uppercase tracking-wide font-condensed transform hover:scale-105"
                 >
                 QUERO MEU INGRESSO
                 </button>

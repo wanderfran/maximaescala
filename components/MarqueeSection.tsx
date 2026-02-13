@@ -34,7 +34,7 @@ const MarqueeSection: React.FC = () => {
                 {Array.from({ length: repetitions * 2 }).map((_, i) => (
                     <div key={i} className="flex items-center gap-12 shrink-0">
                         {/* Text in off-white/silver to match carbon aesthetic */}
-                        <span className="font-display text-2xl md:text-4xl font-normal text-gray-200 tracking-normal drop-shadow-sm">
+                        <span className="font-condensed text-2xl md:text-4xl font-normal text-gray-200 tracking-normal drop-shadow-sm">
                             {text}
                         </span>
                         {/* Star remains as a color accent */}
