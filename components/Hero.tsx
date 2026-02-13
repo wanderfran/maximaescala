@@ -13,8 +13,8 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
   const IMAGE_SCALE_PERCENT_MOBILE = 180; // Zoom in on mobile to focus faces
   
   // --- CONFIGURAÇÃO MANUAL DA FONTE (HEADLINE) ---
-  const HEADLINE_SIZE_DESKTOP = '96px';
-  const HEADLINE_SIZE_MOBILE = '56px';
+  const HEADLINE_SIZE_DESKTOP = '76px';
+  const HEADLINE_SIZE_MOBILE = '44px';
 
   // --- CONTROLE DE ESPAÇAMENTO MOBILE ---
   // Reduzido para 18vh pois o header agora ocupa espaço físico acima
