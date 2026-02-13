@@ -64,10 +64,10 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto px-6 flex flex-col items-center md:items-start w-full max-w-6xl pt-[var(--mobile-hero-spacing)] md:pt-0">
+      <div className="relative z-10 mx-auto px-6 md:px-6 flex flex-col items-center md:items-start w-full max-w-6xl pt-[var(--mobile-hero-spacing)] md:pt-0">
 
         {/* Date & Location Tags */}
-        <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-6 md:mb-8">
+        <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-6 md:mb-8 md:ml-0">
             <div className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#C20000] rounded-full"></span>
                 <span className="text-xs font-bold uppercase tracking-widest text-gray-200">20 e 21 de Março</span>
@@ -83,13 +83,13 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
           <style>{`
             .hero-headline {
               font-size: ${HEADLINE_SIZE_MOBILE};
-              line-height: 1.05;
+              line-height: 1.2;
               letter-spacing: 0.04em;
             }
             @media (min-width: 768px) {
               .hero-headline {
                 font-size: ${HEADLINE_SIZE_DESKTOP};
-                line-height: 1.0;
+                line-height: 1.2;
                 letter-spacing: 0.04em;
               }
             }
@@ -97,7 +97,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
           <h1 className="hero-headline font-condensed text-white uppercase tracking-wide drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
             Escale sua<br />
             operação com<br />
-            previsibilidade
+            <span className="text-[#C20000]">previsibilidade</span>
           </h1>
           
           {/* Improved Scannability Description */}
