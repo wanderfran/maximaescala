@@ -41,7 +41,7 @@ const Features: React.FC = () => {
        {/* Background Decoration */}
        <div className="absolute top-0 inset-x-0 h-64 bg-gradient-to-b from-gray-200 to-transparent opacity-50 pointer-events-none"></div>
 
-       <div className="w-full max-w-6xl mx-auto px-6 relative z-10">
+       <div className="w-full max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16 md:mb-20 max-w-4xl mx-auto pt-4 md:pt-12">
               <span className="text-brand-red font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Metodologia Integrada</span>
               

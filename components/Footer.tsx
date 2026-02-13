@@ -3,7 +3,7 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black py-12 border-t border-white/10">
-      <div className="w-full max-w-6xl mx-auto px-4 flex flex-col items-center justify-center gap-6">
+      <div className="w-full max-w-7xl mx-auto px-4 flex flex-col items-center justify-center gap-6">
         <img 
             src="https://framerusercontent.com/images/svjFFUI9y35yZHV3xw9aVVGM1GU.png?width=369&height=92" 
             alt="Logo" 

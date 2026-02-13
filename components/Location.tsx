@@ -4,7 +4,7 @@ import { MapPin, Navigation } from 'lucide-react';
 const Location: React.FC = () => {
   return (
     <section className="py-12 bg-[#0e0e0e] border-t border-white/5 relative">
-        <div className="w-full max-w-6xl mx-auto px-4">
+        <div className="w-full max-w-7xl mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-center gap-8 bg-[#161616] rounded-2xl p-2 border border-white/5 overflow-hidden">
                 
                 {/* Left: Info */}

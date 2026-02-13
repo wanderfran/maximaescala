@@ -32,7 +32,7 @@ const Speakers: React.FC = () => {
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-red/50 to-transparent"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-brand-red/5 rounded-full blur-[120px] pointer-events-none"></div>
 
-        <div className="w-full max-w-6xl mx-auto px-4 relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
             {/* Header - Compact 2 lines */}
             <div className="text-center mb-16 max-w-4xl mx-auto">
                 <p className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-3">

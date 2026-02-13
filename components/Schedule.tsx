@@ -34,7 +34,7 @@ const Schedule: React.FC = () => {
             {/* Background Texture */}
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#111] to-transparent pointer-events-none"></div>
 
-            <div className="w-full max-w-6xl mx-auto px-4 relative z-10">
+            <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                 <div className="flex flex-col items-center mb-16 text-center">
                     <p className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-2">
                         Agenda Detalhada
