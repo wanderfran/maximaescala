@@ -94,7 +94,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
               }
             }
           `}</style>
-          <h1 className="hero-headline font-condensed text-white uppercase tracking-wide drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
+          <h1 className="hero-headline font-display text-white uppercase tracking-wide drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
             Escale sua<br />
             operação com<br />
             <span className="text-[#C20000]">previsibilidade</span>
