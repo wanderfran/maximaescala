@@ -10,7 +10,7 @@ import Location from './components/Location';
 import Tickets from './components/Tickets';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import BottomBar from './components/BottomBar';
+
 import RegistrationModal from './components/RegistrationModal';
 
 const App: React.FC = () => {
@@ -33,7 +33,7 @@ const App: React.FC = () => {
 
   return (
     // Removed overflow-x-hidden from here to allow sticky position to work reliably
-    <div className="min-h-screen bg-brand-dark font-sans text-white pb-16 md:pb-0 relative">
+    <div className="min-h-screen bg-brand-dark font-sans text-white relative">
       {/* Registration Modal */}
       <RegistrationModal 
         isOpen={isModalOpen} 
@@ -60,9 +60,6 @@ const App: React.FC = () => {
         <FAQ onRegister={() => handleOpenRegistration()} />
       </main>
       <Footer />
-      
-      {/* Sticky Bottom Bar - Fixed at bottom */}
-      <BottomBar onRegister={() => handleOpenRegistration()} />
     </div>
   );
 };
