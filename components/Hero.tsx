@@ -113,7 +113,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
         <div className="flex flex-col w-full max-w-xs md:max-w-md gap-3 md:gap-3 mt-1 md:mt-2">
           <motion.button 
             onClick={onRegister}
-            className="w-full bg-[#C20000] hover:bg-[#a50000] text-white text-lg md:text-xl font-normal py-4 md:py-4 px-8 rounded-lg shadow-[0_0_30px_rgba(194,0,0,0.4)] text-center uppercase tracking-wide font-display transition-all border border-red-500/20 flex items-center justify-center gap-3"
+            className="w-full bg-[#C20000] hover:bg-[#a50000] text-white text-lg md:text-xl font-normal py-4 md:py-4 px-8 rounded-lg shadow-[0_0_30px_rgba(194,0,0,0.4)] text-center uppercase tracking-wide font-condensed transition-all border border-red-500/20 flex items-center justify-center gap-3"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >

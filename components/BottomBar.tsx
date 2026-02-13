@@ -29,7 +29,7 @@ const BottomBar: React.FC<BottomBarProps> = ({ onRegister }) => {
             </div>
             <div className="flex flex-col justify-center">
                 <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-tight mb-0.5">Data</span>
-                <span className="text-sm font-display text-gray-900 uppercase tracking-wide leading-tight pt-0.5">20 e 21 MAR</span>
+                <span className="text-sm font-condensed text-gray-900 uppercase tracking-wide leading-tight pt-0.5">20 e 21 MAR</span>
             </div>
         </div>
 

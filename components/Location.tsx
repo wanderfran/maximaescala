@@ -16,7 +16,7 @@ const Location: React.FC = () => {
                         <span className="text-brand-highlight font-bold tracking-widest uppercase text-xs">Localização Premium</span>
                     </div>
                     
-                    <h2 className="font-display text-3xl md:text-4xl text-white uppercase mb-4 leading-tight">
+                    <h2 className="font-condensed text-3xl md:text-4xl text-white uppercase mb-4 leading-tight">
                         DCT <span className="text-gray-500">Corporate</span>
                     </h2>
                     

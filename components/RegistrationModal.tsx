@@ -275,7 +275,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                 <div className="text-center relative z-10 px-6 w-full pt-4">
                     {/* Badge removida conforme solicitado para não cobrir o nome */}
                     
-                    <h2 className={`font-display text-3xl ${theme.textColor} uppercase tracking-tight filter drop-shadow-md`}>
+                    <h2 className={`font-condensed text-3xl ${theme.textColor} uppercase tracking-tight filter drop-shadow-md`}>
                         {theme.title}
                     </h2>
                     <p className={`text-[10px] font-bold uppercase tracking-[0.3em] ${theme.textColor} opacity-80 mt-1`}>
@@ -364,7 +364,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                         <button 
                             type="submit" 
                             disabled={isLoading}
-                            className={`w-full mt-2 bg-gradient-to-r ${theme.gradient} text-white font-display text-lg uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98] border border-white/10`}
+                            className={`w-full mt-2 bg-gradient-to-r ${theme.gradient} text-white font-condensed text-lg uppercase py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98] border border-white/10`}
                         >
                             {isLoading ? <Loader2 className="animate-spin" /> : 'Emitir Credencial'}
                         </button>
@@ -380,14 +380,14 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                                     <div className="w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center border border-green-500/30 mb-3">
                                         <Check className="text-green-500 w-8 h-8" />
                                     </div>
-                                    <h3 className="text-white font-display text-xl uppercase">Cadastro Recebido</h3>
+                                    <h3 className="text-white font-condensed text-xl uppercase">Cadastro Recebido</h3>
                                     <p className="text-gray-400 text-sm mt-1">Finalize o pagamento para validar sua vaga.</p>
                                 </div>
 
                                 <div className="bg-white/5 border border-white/10 p-4 rounded-xl mb-6 flex items-center justify-between">
                                     <div className="text-left">
                                         <p className="text-[10px] text-gray-500 uppercase font-bold">Tipo de Acesso</p>
-                                        <p className={`font-display text-xl ${theme.accent}`}>{theme.title}</p>
+                                        <p className={`font-condensed text-xl ${theme.accent}`}>{theme.title}</p>
                                     </div>
                                     <div className="text-right">
                                         <p className="text-[10px] text-gray-500 uppercase font-bold">Valor</p>
@@ -406,7 +406,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                                 <button 
                                     onClick={() => handleCheckout(ticketType!)}
                                     disabled={isLoading}
-                                    className={`w-full bg-green-600 hover:bg-green-500 text-white font-display text-xl uppercase py-4 rounded-lg shadow-[0_0_20px_rgba(22,163,74,0.4)] flex items-center justify-center gap-2 transition-all hover:scale-[1.02]`}
+                                    className={`w-full bg-green-600 hover:bg-green-500 text-white font-condensed text-xl uppercase py-4 rounded-lg shadow-[0_0_20px_rgba(22,163,74,0.4)] flex items-center justify-center gap-2 transition-all hover:scale-[1.02]`}
                                 >
                                     {isLoading ? <Loader2 className="animate-spin" /> : (
                                         <>
@@ -429,7 +429,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                                 >
                                     <div>
                                         <span className="text-[10px] font-bold uppercase text-gray-500 block mb-0.5">Acesso Individual</span>
-                                        <span className="text-lg font-display text-white group-hover:text-brand-red transition-colors">VIP</span>
+                                        <span className="text-lg font-condensed text-white group-hover:text-brand-red transition-colors">VIP</span>
                                     </div>
                                     <span className="text-white font-bold">R$ 297</span>
                                 </button>
@@ -442,7 +442,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                                     <div className="absolute top-0 right-0 bg-brand-red text-white text-[8px] px-2 py-0.5 font-bold uppercase rounded-bl">Recomendado</div>
                                     <div>
                                         <span className="text-[10px] font-bold uppercase text-brand-red block mb-0.5">Para Sócios (2 Pessoas)</span>
-                                        <span className="text-lg font-display text-white">VIP DUPLO</span>
+                                        <span className="text-lg font-condensed text-white">VIP DUPLO</span>
                                     </div>
                                     <span className="text-white font-bold">R$ 497</span>
                                 </button>
@@ -454,7 +454,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                                 >
                                     <div>
                                         <span className="text-[10px] font-bold uppercase text-gray-400 block mb-0.5">Experiência Completa</span>
-                                        <span className="text-lg font-display text-white group-hover:text-cyan-400 transition-colors">DIAMOND</span>
+                                        <span className="text-lg font-condensed text-white group-hover:text-cyan-400 transition-colors">DIAMOND</span>
                                     </div>
                                     <span className="text-white font-bold">R$ 997</span>
                                 </button>

@@ -17,7 +17,7 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
                 <span className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-4 block">
                     Vagas Limitadas
                 </span>
-                <h2 className="font-display text-5xl md:text-7xl font-normal text-white uppercase tracking-tight mb-6">
+                <h2 className="font-condensed text-4xl md:text-6xl font-normal text-white uppercase tracking-tight mb-6">
                     Escolha seu <span className="text-brand-highlight">Acesso</span>
                 </h2>
                 <p className="text-gray-400 text-lg font-sans max-w-2xl mx-auto">
@@ -31,13 +31,13 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
                 <div className="bg-[#111] border border-white/10 rounded-2xl p-8 flex flex-col relative hover:border-white/30 transition-all duration-300 group h-full">
                     <div className="mb-8 border-b border-white/5 pb-8">
                         <span className="bg-white/5 text-gray-300 text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wider">Individual</span>
-                        <h3 className="font-display text-4xl text-white mt-4">VIP</h3>
+                        <h3 className="font-condensed text-4xl text-white mt-4">VIP</h3>
                         <p className="text-gray-500 text-sm mt-2">Para quem quer viver os 2 dias e aplicar o método.</p>
                         
                         <div className="mt-6">
                              <div className="flex items-baseline gap-1">
                                 <span className="text-xl text-white font-bold">R$</span>
-                                <span className="text-5xl font-display text-white">297</span>
+                                <span className="text-5xl font-condensed text-white">297</span>
                              </div>
                              <p className="text-gray-500 text-xs uppercase tracking-wider mt-1">12x de R$ 29,82</p>
                         </div>
@@ -54,7 +54,7 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
 
                     <button 
                         onClick={() => onRegister('vip')}
-                        className="w-full block bg-[#1a1a1a] border border-white/10 text-white hover:bg-white hover:text-black font-display text-xl text-center py-4 rounded-lg transition-all uppercase tracking-wide mt-auto"
+                        className="w-full block bg-[#1a1a1a] border border-white/10 text-white hover:bg-white hover:text-black font-condensed text-xl text-center py-4 rounded-lg transition-all uppercase tracking-wide mt-auto"
                     >
                         Comprar VIP
                     </button>
@@ -68,13 +68,13 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
                     
                     <div className="mb-8 border-b border-white/10 pb-8 mt-2">
                         <span className="bg-brand-red/10 text-brand-highlight text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wider">Dupla (2 Ingressos)</span>
-                        <h3 className="font-display text-4xl text-white mt-4">VIP DUPLO</h3>
+                        <h3 className="font-condensed text-4xl text-white mt-4">VIP DUPLO</h3>
                         <p className="text-gray-400 text-sm mt-2">Para sócios e duplas de execução. Um cobra o outro.</p>
                         
                         <div className="mt-6">
                              <div className="flex items-baseline gap-1">
                                 <span className="text-xl text-white font-bold">R$</span>
-                                <span className="text-6xl font-display text-[#C20000]">497</span>
+                                <span className="text-6xl font-condensed text-[#C20000]">497</span>
                              </div>
                              <p className="text-brand-highlight text-xs uppercase tracking-wider mt-1 font-bold">R$ 248,50 por pessoa</p>
                         </div>
@@ -95,7 +95,7 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
 
                     <button 
                         onClick={() => onRegister('vip_duplo')}
-                        className="w-full block bg-[#C20000] hover:bg-[#a50000] text-white font-display text-2xl text-center py-5 rounded-lg shadow-lg transition-all uppercase tracking-wide transform hover:scale-[1.02] mt-auto"
+                        className="w-full block bg-[#C20000] hover:bg-[#a50000] text-white font-condensed text-2xl text-center py-5 rounded-lg shadow-lg transition-all uppercase tracking-wide transform hover:scale-[1.02] mt-auto"
                     >
                         Comprar Duplo
                     </button>
@@ -107,13 +107,13 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
                         <span className="bg-white text-black text-xs font-bold px-3 py-1.5 rounded uppercase tracking-wider flex items-center gap-1 w-max">
                             <Star size={12} fill="black" /> Experiência
                         </span>
-                        <h3 className="font-display text-4xl text-white mt-4">DIAMOND</h3>
+                        <h3 className="font-condensed text-4xl text-white mt-4">DIAMOND</h3>
                         <p className="text-gray-500 text-sm mt-2">Para quem quer evento + ambiente e proximidade.</p>
                         
                         <div className="mt-6">
                              <div className="flex items-baseline gap-1">
                                 <span className="text-xl text-white font-bold">R$</span>
-                                <span className="text-5xl font-display text-white">997</span>
+                                <span className="text-5xl font-condensed text-white">997</span>
                              </div>
                              <p className="text-gray-500 text-xs uppercase tracking-wider mt-1">12x de R$ 99,90</p>
                         </div>
@@ -138,7 +138,7 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
 
                     <button 
                         onClick={() => onRegister('diamond')}
-                        className="w-full block bg-[#1a1a1a] border border-white/10 text-white hover:bg-white hover:text-black font-display text-xl text-center py-4 rounded-lg transition-all uppercase tracking-wide mt-auto"
+                        className="w-full block bg-[#1a1a1a] border border-white/10 text-white hover:bg-white hover:text-black font-condensed text-xl text-center py-4 rounded-lg transition-all uppercase tracking-wide mt-auto"
                     >
                         Ser Diamond
                     </button>
@@ -149,7 +149,7 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
             <div className="max-w-3xl mx-auto mb-20 text-center">
                 <div className="bg-[#111] border border-dashed border-white/20 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 hover:border-brand-red/50 transition-colors">
                     <div className="text-left">
-                        <h4 className="text-white font-display text-xl uppercase mb-1">Vai trazer seu time?</h4>
+                        <h4 className="text-white font-condensed text-xl uppercase mb-1">Vai trazer seu time?</h4>
                         <p className="text-gray-400 text-sm">Condições especiais para compras acima de 5 ingressos.</p>
                     </div>
                     <a 
@@ -177,7 +177,7 @@ const Tickets: React.FC<TicketsProps> = ({ onRegister }) => {
                     </div>
                     
                     <div className="text-center md:text-left relative z-10">
-                        <h3 className="font-display text-2xl md:text-3xl text-white uppercase mb-4 leading-tight">
+                        <h3 className="font-condensed text-2xl md:text-3xl text-white uppercase mb-4 leading-tight">
                             Garantia Incondicional
                         </h3>
                         <div className="space-y-3">
