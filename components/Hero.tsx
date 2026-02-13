@@ -94,18 +94,17 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
             <span className="text-[#C20000]">previsibilidade</span>
           </h1>
           
-          {/* Improved Scannability Description */}
+          {/* Description */}
           <div className="flex flex-col gap-3 md:gap-4 max-w-2xl md:mx-0 mx-auto px-2">
             <p className="font-sans font-medium text-lg md:text-xl text-gray-300 leading-relaxed">
-              Imersão estratégica para <strong className="text-white">Empresários e Líderes</strong> que não aceitam estagnação.
+              Imersão estratégica para <strong className="text-white">Empresários e Líderes</strong><br />
+              que não aceitam estagnação.
             </p>
 
-            <p className="font-sans text-gray-400 text-base md:text-lg leading-relaxed hidden md:block">
-              Integramos Vendas, Comportamento e Posicionamento para transformar o potencial do seu negócio em <strong className="text-white border-b border-brand-red/50 pb-0.5">dominância de mercado e lucro real.</strong>
-            </p>
-             {/* Mobile simplified version */}
-             <p className="font-sans text-gray-400 text-base leading-relaxed md:hidden">
-              Transforme potencial em <strong className="text-white">lucro real</strong> através de Vendas, Comportamento e Posicionamento.
+            <p className="font-sans text-gray-400 text-base md:text-lg leading-relaxed">
+              Integramos Vendas, Comportamento e Posicionamento<br />
+              para transformar o potencial do seu negócio em<br />
+              <strong className="text-white border-b border-brand-red/50 pb-0.5">dominância de mercado e lucro real.</strong>
             </p>
           </div>
         </div>
