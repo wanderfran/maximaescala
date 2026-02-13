@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import TopBar from './components/TopBar';
+
 import Hero from './components/Hero';
 import MarqueeSection from './components/MarqueeSection';
 import Features from './components/Features';
@@ -43,12 +43,7 @@ const App: React.FC = () => {
         initialTicketType={selectedTicketType}
       />
 
-      {/* TopBar: RELATIVE positioning. It will scroll up and disappear. */}
-      <div className="relative z-[60]">
-        <TopBar />
-      </div>
-
-      {/* Navbar: STICKY positioning. It will stick to the top (top-0) when the TopBar scrolls out of view. */}
+      {/* Navbar: STICKY positioning. It will stick to the top (top-0). */}
       <div className="sticky top-0 z-[50]">
         <Navbar onRegister={() => handleOpenRegistration()} />
       </div>
