@@ -13,8 +13,8 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
   const IMAGE_SCALE_PERCENT_MOBILE = 180; // Zoom in on mobile to focus faces
   
   // --- CONFIGURAÇÃO MANUAL DA FONTE (HEADLINE) ---
-  const HEADLINE_SIZE_DESKTOP = '76px';
-  const HEADLINE_SIZE_MOBILE = '44px';
+  const HEADLINE_SIZE_DESKTOP = '96px';
+  const HEADLINE_SIZE_MOBILE = '56px';
 
   // --- CONTROLE DE ESPAÇAMENTO MOBILE ---
   // Reduzido para 18vh pois o header agora ocupa espaço físico acima
@@ -84,17 +84,17 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
             .hero-headline {
               font-size: ${HEADLINE_SIZE_MOBILE};
               line-height: 1.2;
-              letter-spacing: 0.04em;
+              letter-spacing: 0;
             }
             @media (min-width: 768px) {
               .hero-headline {
                 font-size: ${HEADLINE_SIZE_DESKTOP};
                 line-height: 1.2;
-                letter-spacing: 0.04em;
+                letter-spacing: 0;
               }
             }
           `}</style>
-          <h1 className="hero-headline font-condensed text-white uppercase tracking-wide drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
+          <h1 className="hero-headline font-condensed text-white uppercase tracking-[0] drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
             Escale sua<br />
             operação com<br />
             <span className="text-[#C20000]">previsibilidade</span>
