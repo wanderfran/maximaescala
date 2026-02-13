@@ -55,12 +55,6 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
                 backgroundPosition: `center top`, 
             }}
         ></div>
-        
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent via-40% to-[#080808] to-90% md:hidden"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-[#080808] via-[#080808]/90 to-transparent"></div>
-        {/* Desktop Gradient Adjustment to help readability if overlaps slightly */}
-        <div className="hidden md:block absolute bottom-0 left-0 right-0 h-[50%] bg-gradient-to-t from-[#080808] via-[#080808]/80 to-transparent"></div>
       </div>
 
       {/* Content */}
