@@ -36,10 +36,10 @@ const Schedule: React.FC = () => {
 
             <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                 <div className="flex flex-col items-center mb-16 text-center">
-                    <p className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-2">
+                    <p className="text-brand-highlight font-sans text-sm font-bold uppercase mb-2">
                         Agenda Detalhada
                     </p>
-                    <h2 className="font-condensed text-4xl md:text-6xl font-normal text-white uppercase tracking-tight mb-8">
+                    <h2 className="font-condensed text-4xl md:text-6xl font-normal text-white uppercase mb-8">
                         Programação
                     </h2>
                     
@@ -57,8 +57,8 @@ const Schedule: React.FC = () => {
                                 <CalendarDays size={20} />
                             </div>
                             <div className="text-left">
-                                <span className="block text-xs font-bold uppercase tracking-widest opacity-80">20 de Março</span>
-                                <span className="block font-condensed text-lg uppercase tracking-wide leading-none mt-1">Dia 01 • Liderança</span>
+                                <span className="block text-xs font-bold uppercase opacity-80">20 de Março</span>
+                                <span className="block font-condensed text-lg uppercase leading-none mt-1">Dia 01 • Liderança</span>
                             </div>
                         </button>
 
@@ -74,8 +74,8 @@ const Schedule: React.FC = () => {
                                 <CalendarDays size={20} />
                             </div>
                             <div className="text-left">
-                                <span className="block text-xs font-bold uppercase tracking-widest opacity-80">21 de Março</span>
-                                <span className="block font-condensed text-lg uppercase tracking-wide leading-none mt-1">Dia 02 • Estratégia</span>
+                                <span className="block text-xs font-bold uppercase opacity-80">21 de Março</span>
+                                <span className="block font-condensed text-lg uppercase leading-none mt-1">Dia 02 • Estratégia</span>
                             </div>
                         </button>
                     </div>
@@ -105,7 +105,7 @@ const Schedule: React.FC = () => {
                                     <div className="sm:w-[120px] flex-shrink-0 mb-2 sm:mb-0 sm:pr-8 sm:text-right pl-[60px] sm:pl-0">
                                         <div className="inline-flex items-center gap-2 bg-[#111] border border-white/5 rounded px-2 py-1 sm:border-none sm:bg-transparent sm:p-0">
                                             <Clock size={14} className="text-brand-red sm:hidden" />
-                                            <span className="text-brand-highlight font-condensed text-xl sm:text-2xl tracking-wide">
+                                            <span className="text-brand-highlight font-condensed text-xl sm:text-2xl">
                                                 {item.time}
                                             </span>
                                         </div>
@@ -117,19 +117,19 @@ const Schedule: React.FC = () => {
                                         <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/5 blur-[50px] -translate-y-1/2 translate-x-1/2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                         
                                         <div className="relative z-10">
-                                            <h3 className="text-lg sm:text-xl font-bold text-white uppercase font-condensed tracking-wide mb-2 leading-tight">
+                                            <h3 className="text-lg sm:text-xl font-bold text-white uppercase font-condensed mb-2 leading-tight">
                                                 {item.title}
                                             </h3>
                                             
                                             {item.speaker && (
                                                 <div className="mb-3">
-                                                    <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400 border border-white/10 px-2 py-1 rounded bg-white/5">
+                                                    <span className="text-[10px] font-bold uppercase text-gray-400 border border-white/10 px-2 py-1 rounded bg-white/5">
                                                         {item.speaker}
                                                     </span>
                                                 </div>
                                             )}
                                             
-                                            <p className="text-gray-500 font-sans text-sm leading-relaxed tracking-normal group-hover:text-gray-400 transition-colors">
+                                            <p className="text-gray-500 font-sans text-sm leading-relaxed group-hover:text-gray-400 transition-colors">
                                                 {item.desc}
                                             </p>
                                         </div>

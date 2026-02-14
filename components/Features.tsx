@@ -30,9 +30,9 @@ const Features: React.FC = () => {
 
        <div className="w-full max-w-7xl mx-auto px-6 relative z-10">
           <div className="mb-16 md:mb-20 max-w-3xl pt-4 md:pt-12">
-              <span className="text-brand-red font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Metodologia Integrada</span>
+              <span className="text-brand-red font-bold uppercase text-xs md:text-sm mb-4 block">Metodologia Integrada</span>
 
-              <h2 className="font-condensed uppercase leading-tight mb-6 w-full text-3xl sm:text-4xl md:text-5xl text-white tracking-tight">
+              <h2 className="font-condensed uppercase leading-tight mb-6 w-full text-3xl sm:text-4xl md:text-5xl text-white">
                   Fundamentos de Crescimento.
               </h2>
 
@@ -53,7 +53,7 @@ const Features: React.FC = () => {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-white font-condensed text-lg md:text-xl uppercase tracking-tight leading-snug mb-6">
+                <h3 className="text-white font-condensed text-lg md:text-xl uppercase leading-snug mb-6">
                     {feature.title}
                 </h3>
 

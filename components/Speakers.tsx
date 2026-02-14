@@ -35,10 +35,10 @@ const Speakers: React.FC = () => {
         <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
             {/* Header - Compact 2 lines */}
             <div className="text-center mb-16 max-w-4xl mx-auto">
-                <p className="text-brand-highlight font-sans text-sm font-bold tracking-widest uppercase mb-3">
+                <p className="text-brand-highlight font-sans text-sm font-bold uppercase mb-3">
                     Quem conduz o Máxima Escala
                 </p>
-                <h2 className="font-condensed text-4xl md:text-6xl text-white uppercase leading-[0.95] tracking-tight">
+                <h2 className="font-condensed text-4xl md:text-6xl text-white uppercase leading-[0.95]">
                     As Maiores <br className="hidden md:block"/>
                     <span className="text-brand-red">Autoridades</span>
                 </h2>
@@ -82,7 +82,7 @@ const Speakers: React.FC = () => {
                             {/* Decorative Brand Tag */}
                             <div className="mb-4 flex items-center gap-2 opacity-60">
                                 <div className="w-1 h-3 bg-brand-red"></div>
-                                <span className="text-[10px] font-bold tracking-widest uppercase text-gray-400">Máxima Escala</span>
+                                <span className="text-[10px] font-bold uppercase text-gray-400">Máxima Escala</span>
                             </div>
 
                             {/* Name - Adjusted leading to prevent crop */}
@@ -91,7 +91,7 @@ const Speakers: React.FC = () => {
                             </h3>
                             
                             {/* Role */}
-                            <p className="text-brand-red font-bold text-xs md:text-sm uppercase tracking-wider mb-4">
+                            <p className="text-brand-red font-bold text-xs md:text-sm uppercase mb-4">
                                 {speaker.role}
                             </p>
 

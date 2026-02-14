@@ -64,11 +64,11 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
         <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 mb-6 md:mb-8 md:ml-0">
             <div className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#C20000] rounded-full"></span>
-                <span className="text-xs font-bold uppercase tracking-widest text-gray-200">20 e 21 de Março</span>
+                <span className="text-xs font-bold uppercase text-gray-200">20 e 21 de Março</span>
             </div>
             <div className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-[#C20000] rounded-full"></span>
-                <span className="text-xs font-bold uppercase tracking-widest text-gray-200">João Pessoa</span>
+                <span className="text-xs font-bold uppercase text-gray-200">João Pessoa</span>
             </div>
         </div>
 
@@ -78,17 +78,15 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
             .hero-headline {
               font-size: ${HEADLINE_SIZE_MOBILE};
               line-height: 1.2;
-              letter-spacing: 0;
             }
             @media (min-width: 768px) {
               .hero-headline {
                 font-size: ${HEADLINE_SIZE_DESKTOP};
                 line-height: 1.2;
-                letter-spacing: 0;
               }
             }
           `}</style>
-          <h1 className="hero-headline font-condensed text-white uppercase tracking-[0] drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
+          <h1 className="hero-headline font-condensed text-white uppercase drop-shadow-2xl mb-6 md:mb-8 max-w-4xl">
             Escale sua<br />
             operação com<br />
             <span className="text-[#C20000]">previsibilidade</span>
@@ -113,7 +111,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
         <div className="flex flex-col w-full max-w-xs md:max-w-md gap-3 md:gap-3 mt-1 md:mt-2">
           <motion.button 
             onClick={onRegister}
-            className="w-full bg-[#C20000] hover:bg-[#a50000] text-white text-lg md:text-xl font-normal py-4 md:py-4 px-8 rounded-lg shadow-[0_0_30px_rgba(194,0,0,0.4)] text-center uppercase tracking-wide font-condensed transition-all border border-red-500/20 flex items-center justify-center gap-3"
+            className="w-full bg-[#C20000] hover:bg-[#a50000] text-white text-lg md:text-xl font-normal py-4 md:py-4 px-8 rounded-lg shadow-[0_0_30px_rgba(194,0,0,0.4)] text-center uppercase font-condensed transition-all border border-red-500/20 flex items-center justify-center gap-3"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -124,7 +122,7 @@ const Hero: React.FC<HeroProps> = ({ onRegister }) => {
           <a
             href="#speakers"
             onClick={(e) => scrollToSection(e, 'speakers')}
-            className="flex items-center justify-center md:justify-start gap-2 text-gray-500 hover:text-white transition-colors text-xs uppercase tracking-widest font-bold py-2 md:py-2"
+            className="flex items-center justify-center md:justify-start gap-2 text-gray-500 hover:text-white transition-colors text-xs uppercase font-bold py-2 md:py-2"
           >
             Conhecer os Mentores <ArrowRight size={12} />
           </a>
