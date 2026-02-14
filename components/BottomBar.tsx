@@ -1,55 +1,64 @@
 
-import React from 'react';
-import { CalendarDays } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 
 interface BottomBarProps {
   onRegister: () => void;
 }
 
 const BottomBar: React.FC<BottomBarProps> = ({ onRegister }) => {
-  // Configuração manual da porcentagem de vendas
-  const soldPercentage = 15; 
+  const [visible, setVisible] = useState(false);
 
-  const handleAction = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    onRegister();
-  };
+  // Configuração manual
+  const soldPercentage = 15;
+  const currentLote = '1º Lote';
+  const priceLabel = 'R$ 297';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Aparece quando o scroll passa da altura da viewport (fim do Hero)
+      setVisible(window.scrollY > window.innerHeight * 0.85);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // check initial position
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-white border-t border-gray-200 shadow-[0_-5px_20px_rgba(0,0,0,0.1)] pb-[env(safe-area-inset-bottom)] transition-all duration-300">
-      <a 
-        href="#ingressos" 
-        onClick={handleAction}
-        className="flex items-center justify-between px-4 py-3 md:py-4 md:px-8 max-w-7xl mx-auto hover:bg-gray-50 transition-colors cursor-pointer group"
-      >
-        {/* Lado Esquerdo: Data */}
-        <div className="flex items-center gap-3">
-            <div className="p-1.5 bg-gray-100 rounded text-brand-red group-hover:bg-brand-red group-hover:text-white transition-colors">
-                <CalendarDays size={18} />
-            </div>
-            <div className="flex flex-col justify-center">
-                <span className="text-[10px] text-gray-500 font-bold uppercase leading-tight mb-0.5">Data</span>
-                <span className="text-sm font-condensed text-gray-900 uppercase leading-tight pt-0.5">20 e 21 MAR</span>
-            </div>
-        </div>
+    <div
+      className={`fixed bottom-0 left-0 right-0 z-[100] bg-black/95 backdrop-blur-md border-t border-white/10 pb-[env(safe-area-inset-bottom)] transition-all duration-500 ${
+        visible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+      }`}
+    >
+      <div className="flex items-center justify-between px-4 py-3 md:py-3.5 md:px-8 max-w-7xl mx-auto gap-4">
 
-        {/* Lado Direito: Status e Barra */}
-        <div className="flex flex-col items-end justify-center gap-1.5 w-[160px] md:w-[220px]">
-            <div className="flex items-center justify-end gap-2 text-[10px] font-bold uppercase w-full leading-tight">
-                <span className="text-brand-red">1º Lote</span>
-                <span className="text-gray-400">•</span>
-                <span className="text-gray-600">{soldPercentage}% Vendido</span>
-            </div>
-            
-            {/* Barra de Progresso */}
-            <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden relative">
-                <div 
-                    className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#500000] via-[#C20000] to-[#FF2A00] transition-all duration-1000"
-                    style={{ width: `${soldPercentage}%` }}
-                ></div>
-            </div>
+        {/* Lado Esquerdo: CTA Button */}
+        <button
+          onClick={onRegister}
+          className="bg-[#C20000] hover:bg-[#a50000] text-white font-condensed text-sm md:text-base uppercase py-3 px-5 md:px-8 rounded-lg transition-all flex items-center gap-2 md:gap-3 whitespace-nowrap shadow-[0_0_20px_rgba(194,0,0,0.3)] hover:scale-[1.02] active:scale-[0.98]"
+        >
+          <span className="font-bold">COMPRAR INGRESSO</span>
+          <span className="text-white/40">|</span>
+          <span className="text-white/80 text-xs md:text-sm">{currentLote.toUpperCase()}</span>
+        </button>
+
+        {/* Lado Direito: Progresso de vendas */}
+        <div className="flex flex-col items-end justify-center gap-1.5 w-[140px] md:w-[240px] shrink-0">
+          <div className="flex items-center justify-end gap-1.5 text-[10px] md:text-xs font-bold uppercase w-full leading-tight">
+            <span className="text-white/60 hidden md:inline">{soldPercentage}% dos ingressos vendidos a</span>
+            <span className="text-white/60 md:hidden">{soldPercentage}% vendido</span>
+            <span className="text-brand-highlight">{priceLabel}</span>
+          </div>
+
+          {/* Barra de Progresso */}
+          <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden relative">
+            <div
+              className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#C20000] to-[#FF2A00] rounded-full transition-all duration-1000"
+              style={{ width: `${soldPercentage}%` }}
+            ></div>
+          </div>
         </div>
-      </a>
+      </div>
     </div>
   );
 };
