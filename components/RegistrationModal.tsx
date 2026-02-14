@@ -275,10 +275,10 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                 <div className="text-center relative z-10 px-6 w-full pt-4">
                     {/* Badge removida conforme solicitado para não cobrir o nome */}
                     
-                    <h2 className={`font-condensed text-3xl ${theme.textColor} uppercase tracking-tight filter drop-shadow-md`}>
+                    <h2 className={`font-condensed text-3xl ${theme.textColor} uppercase filter drop-shadow-md`}>
                         {theme.title}
                     </h2>
-                    <p className={`text-[10px] font-bold uppercase tracking-[0.3em] ${theme.textColor} opacity-80 mt-1`}>
+                    <p className={`text-[10px] font-bold uppercase ${theme.textColor} opacity-80 mt-1`}>
                         20 & 21 MAR • JOÃO PESSOA
                     </p>
                 </div>
@@ -295,7 +295,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                 {step === 1 && (
                     <form onSubmit={handleLeadSubmit} className="space-y-5">
                         <div className="text-center mb-6">
-                            <p className="text-gray-400 text-xs uppercase tracking-wide font-medium">Preencha os dados da credencial</p>
+                            <p className="text-gray-400 text-xs uppercase font-medium">Preencha os dados da credencial</p>
                         </div>
 
                         <div className="space-y-4">
@@ -418,7 +418,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
                         ) : (
                             /* Se não selecionou ingresso, mostra as opções com visual "Card" */
                             <div className="space-y-3">
-                                <p className="text-center text-gray-400 text-xs uppercase tracking-wide font-medium mb-4">
+                                <p className="text-center text-gray-400 text-xs uppercase font-medium mb-4">
                                     Selecione seu nível de acesso
                                 </p>
                                 
@@ -467,14 +467,14 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, 
             {/* SECURITY FOOTER */}
             <div className="bg-black/40 p-3 flex items-center justify-center gap-2 border-t border-white/5">
                 <ShieldCheck size={12} className="text-gray-500" />
-                <span className="text-[9px] text-gray-500 uppercase tracking-widest">Ambiente Seguro & Criptografado</span>
+                <span className="text-[9px] text-gray-500 uppercase">Ambiente Seguro & Criptografado</span>
             </div>
         </div>
         
         {/* CLOSE BUTTON (Outside or minimal) */}
         <button 
             onClick={onClose}
-            className="absolute -top-10 right-0 text-gray-400 hover:text-white transition-colors flex items-center gap-1 text-xs uppercase font-bold tracking-widest"
+            className="absolute -top-10 right-0 text-gray-400 hover:text-white transition-colors flex items-center gap-1 text-xs uppercase font-bold"
         >
             Fechar <X size={16} />
         </button>

@@ -28,14 +28,14 @@ const BottomBar: React.FC<BottomBarProps> = ({ onRegister }) => {
                 <CalendarDays size={18} />
             </div>
             <div className="flex flex-col justify-center">
-                <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest leading-tight mb-0.5">Data</span>
-                <span className="text-sm font-condensed text-gray-900 uppercase tracking-wide leading-tight pt-0.5">20 e 21 MAR</span>
+                <span className="text-[10px] text-gray-500 font-bold uppercase leading-tight mb-0.5">Data</span>
+                <span className="text-sm font-condensed text-gray-900 uppercase leading-tight pt-0.5">20 e 21 MAR</span>
             </div>
         </div>
 
         {/* Lado Direito: Status e Barra */}
         <div className="flex flex-col items-end justify-center gap-1.5 w-[160px] md:w-[220px]">
-            <div className="flex items-center justify-end gap-2 text-[10px] font-bold uppercase tracking-wider w-full leading-tight">
+            <div className="flex items-center justify-end gap-2 text-[10px] font-bold uppercase w-full leading-tight">
                 <span className="text-brand-red">1º Lote</span>
                 <span className="text-gray-400">•</span>
                 <span className="text-gray-600">{soldPercentage}% Vendido</span>

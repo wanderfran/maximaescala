@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
               key={link.name} 
               href={link.href} 
               onClick={(e) => handleSmoothScroll(e, link.href)}
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wider uppercase font-sans"
+              className="text-sm font-medium text-gray-300 hover:text-white transition-colors uppercase font-sans"
             >
               {link.name}
             </a>
@@ -72,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
         <div className="hidden md:block">
           <button 
             onClick={onRegister}
-            className="bg-[#C20000] hover:bg-[#a50000] text-white text-sm font-normal py-2.5 px-6 rounded shadow-lg transition-all duration-200 uppercase tracking-wide font-condensed transform hover:-translate-y-0.5"
+            className="bg-[#C20000] hover:bg-[#a50000] text-white text-sm font-normal py-2.5 px-6 rounded shadow-lg transition-all duration-200 uppercase font-condensed transform hover:-translate-y-0.5"
           >
             Comprar Ingresso
           </button>
@@ -107,7 +107,7 @@ const Navbar: React.FC<NavbarProps> = ({ onRegister }) => {
               setMobileMenuOpen(false);
               onRegister();
             }}
-            className="bg-[#C20000] text-white text-center font-normal py-5 rounded block mt-8 text-2xl uppercase font-condensed shadow-glow tracking-wide w-full"
+            className="bg-[#C20000] text-white text-center font-normal py-5 rounded block mt-8 text-2xl uppercase font-condensed shadow-glow w-full"
           >
             COMPRAR INGRESSO
           </button>

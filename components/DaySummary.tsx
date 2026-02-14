@@ -7,8 +7,8 @@ const DaySummary: React.FC = () => {
       <div className="w-full max-w-7xl mx-auto px-4">
         {/* Header - Adjusted size to fit 2 lines cleanly */}
         <div className="text-center mb-16 max-w-4xl mx-auto">
-            <span className="text-brand-red font-bold tracking-widest uppercase text-sm mb-2 block">O que você vive na prática</span>
-           <h2 className="font-condensed text-3xl md:text-6xl font-normal text-black uppercase tracking-tight leading-tight">
+            <span className="text-brand-red font-bold uppercase text-sm mb-2 block">O que você vive na prática</span>
+           <h2 className="font-condensed text-3xl md:text-6xl font-normal text-black uppercase leading-tight">
               A ROTINA DE <span className="text-brand-red">LÍDERES DE MERCADO</span>
            </h2>
         </div>
@@ -17,16 +17,16 @@ const DaySummary: React.FC = () => {
           {/* Day 01 Card */}
           <div className="flex flex-col rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] bg-white border border-gray-100 h-full">
              <div className="bg-[#C20000] p-8 text-center py-12">
-                <h3 className="font-condensed text-5xl md:text-6xl text-white mb-3 tracking-tight">DIA 01</h3>
+                <h3 className="font-condensed text-5xl md:text-6xl text-white mb-3">DIA 01</h3>
                 <div className="w-16 h-1 bg-white/30 mx-auto mb-4 rounded-full"></div>
-                <p className="font-sans text-white text-lg md:text-xl font-bold max-w-sm mx-auto tracking-wide uppercase leading-snug">
+                <p className="font-sans text-white text-lg md:text-xl font-bold max-w-sm mx-auto uppercase leading-snug">
                    Identidade, Comunicação e Networking
                 </p>
              </div>
              
              <div className="bg-gray-50 p-8 md:p-12 flex-1">
                 <div className="mb-10 p-6 bg-white border-l-4 border-brand-red rounded-r-xl shadow-sm">
-                    <p className="font-sans text-gray-500 font-bold mb-2 uppercase text-xs tracking-widest">Foco do dia</p>
+                    <p className="font-sans text-gray-500 font-bold mb-2 uppercase text-xs">Foco do dia</p>
                     <p className="text-black text-lg font-medium leading-relaxed">
                         Elevar o padrão da sua comunicação e alinhar sua mentalidade para gerir o crescimento acelerado.
                     </p>
@@ -45,7 +45,7 @@ const DaySummary: React.FC = () => {
                         <div className="mt-1.5 bg-red-100 p-1.5 rounded-full shrink-0 group-hover:bg-red-200 transition-colors">
                             <Star className="text-[#C20000] fill-current" size={16} />
                         </div>
-                        <span className="text-gray-700 font-sans font-medium text-lg leading-relaxed tracking-normal">
+                        <span className="text-gray-700 font-sans font-medium text-lg leading-relaxed">
                           {item}
                         </span>
                      </li>
@@ -58,16 +58,16 @@ const DaySummary: React.FC = () => {
           <div className="flex flex-col rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)] bg-white border border-gray-100 h-full">
              <div className="bg-[#C20000] p-8 text-center py-12 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
-                <h3 className="font-condensed text-5xl md:text-6xl text-white mb-3 relative z-10 tracking-tight">DIA 02</h3>
+                <h3 className="font-condensed text-5xl md:text-6xl text-white mb-3 relative z-10">DIA 02</h3>
                 <div className="w-16 h-1 bg-white/30 mx-auto mb-4 rounded-full relative z-10"></div>
-                <p className="font-sans text-white text-lg md:text-xl font-bold max-w-sm mx-auto relative z-10 tracking-wide uppercase leading-snug">
+                <p className="font-sans text-white text-lg md:text-xl font-bold max-w-sm mx-auto relative z-10 uppercase leading-snug">
                    Governança, Vendas e Plano de Ação
                 </p>
              </div>
 
              <div className="bg-gray-50 p-8 md:p-12 flex-1">
                 <div className="mb-10 p-6 bg-white border-l-4 border-brand-red rounded-r-xl shadow-sm">
-                    <p className="font-sans text-gray-500 font-bold mb-2 uppercase text-xs tracking-widest">Foco do dia</p>
+                    <p className="font-sans text-gray-500 font-bold mb-2 uppercase text-xs">Foco do dia</p>
                     <p className="text-black text-lg font-medium leading-relaxed">
                         Implementar a estrutura comercial e o plano tático para escalar seus resultados já no próximo mês.
                     </p>
@@ -86,7 +86,7 @@ const DaySummary: React.FC = () => {
                         <div className="mt-1.5 bg-red-100 p-1.5 rounded-full shrink-0 group-hover:bg-red-200 transition-colors">
                              <Star className="text-[#C20000] fill-current" size={16} />
                         </div>
-                        <span className="text-gray-700 font-sans font-medium text-lg leading-relaxed tracking-normal">
+                        <span className="text-gray-700 font-sans font-medium text-lg leading-relaxed">
                           {item}
                         </span>
                      </li>

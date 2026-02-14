@@ -13,7 +13,7 @@ const Location: React.FC = () => {
                         <div className="w-10 h-10 rounded-full bg-brand-red/10 flex items-center justify-center text-brand-red">
                             <MapPin size={20} />
                         </div>
-                        <span className="text-brand-highlight font-bold tracking-widest uppercase text-xs">Localização Premium</span>
+                        <span className="text-brand-highlight font-bold uppercase text-xs">Localização Premium</span>
                     </div>
                     
                     <h2 className="font-condensed text-3xl md:text-4xl text-white uppercase mb-4 leading-tight">
@@ -38,7 +38,7 @@ const Location: React.FC = () => {
                         href="https://maps.app.goo.gl/K6ZqZ9Z9Z9Z9Z9Z9" // Replace with actual Google Maps link
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-8 inline-flex items-center gap-2 text-white border-b border-brand-red/50 pb-1 hover:text-brand-red transition-colors w-max text-sm font-bold uppercase tracking-wide"
+                        className="mt-8 inline-flex items-center gap-2 text-white border-b border-brand-red/50 pb-1 hover:text-brand-red transition-colors w-max text-sm font-bold uppercase"
                     >
                         <Navigation size={14} />
                         Abrir no GPS
@@ -67,7 +67,7 @@ const Location: React.FC = () => {
                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none flex flex-col items-center">
                         {/* Label Bubble */}
                         <div className="mb-2 bg-white px-3 py-1.5 rounded shadow-[0_4px_10px_rgba(0,0,0,0.3)] animate-bounce relative">
-                            <p className="text-black font-bold text-[10px] uppercase tracking-wide whitespace-nowrap">DCT Corporate</p>
+                            <p className="text-black font-bold text-[10px] uppercase whitespace-nowrap">DCT Corporate</p>
                             {/* Triangle */}
                             <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-white rotate-45"></div>
                         </div>
