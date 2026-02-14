@@ -53,7 +53,7 @@ const Features: React.FC = () => {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-white font-condensed text-lg md:text-xl uppercase leading-snug mb-6">
+                <h3 className="text-white font-condensed text-2xl md:text-3xl uppercase leading-snug mb-6">
                     {feature.title}
                 </h3>
 
